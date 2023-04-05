@@ -1,7 +1,5 @@
 # jumblepop
 jumblepop is a game all about jumblepopping
-poop meepz
-
 
 # how to compile:
 g++ [-o {name (without extension) of output file}] Entity.cpp Main.cpp ...
@@ -14,3 +12,4 @@ g++ [-o {name (without extension) of output file}] Entity.cpp Main.cpp ...
 - if no -o name is specified, the output name will be a.out
 # how to run:
 .\{name of output file}.exe
+
