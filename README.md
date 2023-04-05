@@ -3,10 +3,6 @@ jumblepop is a game all about jumblepopping
 
 # how to compile:
 g++ [-o {name (without extension) of output file}] Entity.cpp Main.cpp ...
-## The compilation line is currently (as of 4/4/23:02):
-g++ -o jumblepop entity.cpp main.cpp enemy.cpp
-## The directory (for me) is... (you will have to be at the same folder at the end)
-C:\Users\asher ... \Basic_Tests
 ## notes:
 - this can be done in the vscode terminal
 - you need all of the .cpp files written in the compilation line, none of the .h files
@@ -16,6 +12,10 @@ C:\Users\asher ... \Basic_Tests
 - your current directory is shown in the vscode terminal as C:\Users\.......
 - if a cpp file is not in the directory you're in, you need to do relative addressing (look it up)
 - if no -o name is specified, the output name will be a.out
+## The compilation line is currently (as of 4/4/23:02):
+g++ -o jumblepop entity.cpp main.cpp enemy.cpp
+## The directory (for me) is... (you will have to be at the same folder at the end)
+C:\Users\asher ... \Basic_Tests
 # how to run:
 .\{name of output file}.exe
 ## The run line is currently (as of 4/4/23:02):
