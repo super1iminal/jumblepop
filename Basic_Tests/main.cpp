@@ -1,4 +1,5 @@
 #include "Entity.h"
+#include <string>
 #include <iostream>
 
 int main() { 
@@ -7,6 +8,10 @@ int main() {
 
     std::cout << "Skeleton's health is "<< skeleton.getHealth() << std::endl;
     std::cout << "Zombie's ap is " << zombie.getAP() << std::endl;
+
+    zombie.dealOther(skeleton);
+
+    std::cout << "Skeleton's health is now "<< skeleton.getHealth() << std::endl;
     
     return 0;
 }
