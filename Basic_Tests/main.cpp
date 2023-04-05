@@ -1,17 +1,6 @@
-#include "Entity.h"
-#include <string>
-#include <iostream>
+#include "Game.cpp"
 
 int main() { 
-    Entity zombie = Entity(10, 10);
-    Entity skeleton = Entity(5, 15);
-
-    std::cout << "Skeleton's health is "<< skeleton.getHealth() << std::endl;
-    std::cout << "Zombie's ap is " << zombie.getAP() << std::endl;
-
-    zombie.dealOther(skeleton);
-
-    std::cout << "Skeleton's health is now "<< skeleton.getHealth() << std::endl;
-    
+    runGame();
     return 0;
 }
