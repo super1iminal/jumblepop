@@ -13,7 +13,7 @@ class Entity {
 
         // normal functions
 
-        void dealOther(Entity & enemy);
+        int dealOther(Entity & enemy);
 
         void takeDamage(int damage);
 
@@ -33,6 +33,8 @@ class Entity {
         void setAP(int ap);
 
         void setName(std::string n);
+
+        bool isDead();
 
         
 

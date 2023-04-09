@@ -13,9 +13,10 @@ Entity::Entity(int h, int ap, std::string n) {
     name = n;
 }
 
-void Entity::dealOther(Entity & enemy) {
+int Entity::dealOther(Entity & enemy) {
     int damage = attackPower;
     enemy.takeDamage(damage);
+    return damage;
 }
 
 void Entity::takeDamage(int damage) {
@@ -44,6 +45,14 @@ void Entity::setAP(int ap) {
 
 void Entity::setName(std::string n) {
     name = n;
+}
+
+bool Entity::isDead() {
+    if (health <= 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
